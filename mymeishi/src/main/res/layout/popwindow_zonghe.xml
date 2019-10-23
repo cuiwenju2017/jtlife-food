@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorwaite"
+    android:layout_height="match_parent">
+
+<View
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/gray_light"
+    >
+</View>
+ <LinearLayout
+     android:id="@+id/lin_zonghe_layout"
+     android:layout_marginLeft="20dp"
+     android:layout_width="match_parent"
+     android:layout_height="50dp"
+     android:gravity="center_vertical"
+     >
+  <TextView
+     android:id="@+id/text_zonghe"
+      android:gravity="center"
+      android:layout_width="wrap_content"
+      android:layout_height="30dp"
+      android:text="综合排序"
+      android:textSize="15dp"
+      />
+
+ </LinearLayout>
+ <View
+     android:layout_width="match_parent"
+     android:layout_height="1dp"
+     android:background="@color/gray_light"
+     >
+ </View>
+ <LinearLayout
+     android:id="@+id/lin_pingjia_layout"
+     android:layout_marginLeft="20dp"
+     android:layout_width="match_parent"
+     android:layout_height="50dp"
+     android:gravity="center_vertical"
+     >
+  <TextView
+      android:id="@+id/text_pingjiayx"
+      android:gravity="center"
+      android:layout_width="wrap_content"
+      android:layout_height="30dp"
+      android:text="评价优先"
+      android:textSize="15dp"
+      />
+
+
+ </LinearLayout>
+ <View
+     android:layout_width="match_parent"
+     android:layout_height="1dp"
+     android:background="@color/gray_light"
+     >
+ </View>
+ <LinearLayout
+     android:id="@+id/lin_congdi_layout"
+     android:layout_marginLeft="20dp"
+     android:layout_width="match_parent"
+     android:layout_height="50dp"
+     android:gravity="center_vertical"
+     >
+  <TextView
+      android:id="@+id/text_congdidaog"
+      android:gravity="center"
+      android:layout_width="wrap_content"
+      android:layout_height="30dp"
+      android:text="价格从低到高"
+      android:textSize="15dp"
+      />
+
+
+ </LinearLayout>
+ <View
+     android:layout_width="match_parent"
+     android:layout_height="1dp"
+     android:background="@color/gray_light"
+     >
+ </View>
+ <LinearLayout
+     android:id="@+id/lin_conggao_layout"
+     android:layout_marginLeft="20dp"
+     android:layout_width="match_parent"
+     android:layout_height="50dp"
+     android:gravity="center_vertical"
+     >
+  <TextView
+      android:id="@+id/text_jiageconggao"
+      android:gravity="center"
+      android:layout_width="wrap_content"
+      android:layout_height="30dp"
+      android:text="价格从高到地"
+      android:textSize="15dp"
+      />
+
+ </LinearLayout>
+ <View
+     android:layout_width="match_parent"
+     android:layout_height="1dp"
+     android:background="@color/gray_light"
+     >
+ </View>
+
+</LinearLayout>

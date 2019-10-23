@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hz.sc.helpprojects">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.HelpMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.HelpSearchActivity" />
+        <activity android:name=".activity.Privacysettings" />
+        <activity android:name=".activity.HelpPrivaySercACtivaty" />
+        <activity android:name=".activity.HelpPersonalCenter" />
+        <activity android:name=".activity.HelpTaketaxi" />
+        <activity android:name=".activity.Citypacler" />
+        <activity android:name=".activity.HelpAddedAddress" />
+        <activity android:name=".activity.HelpIntegralMall" />
+        <activity android:name=".activity.EditingPersonalData"></activity>
+    </application>
+
+</manifest>

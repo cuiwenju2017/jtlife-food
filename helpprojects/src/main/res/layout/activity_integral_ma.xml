@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorwaite"
+    tools:context=".helpfragment.HelpFragment1">
+
+    <include
+        layout="@layout/include_title_name"
+        >
+
+    </include>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_color" />
+
+    <RadioGroup
+        android:id="@+id/myhelpjfsc"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorwaite"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+
+            <hz.sc.helpprojects.view.CustomRadioButton
+                    android:id="@+id/custom_jfbutton"
+                android:layout_width="0dp"
+                android:text="积分"
+                android:button="@null"
+                android:drawableLeft="@drawable/helpicon_coin"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="@drawable/radiobutton_textcolor"
+                >
+
+            </hz.sc.helpprojects.view.CustomRadioButton>
+
+
+        <hz.sc.helpprojects.view.CustomRadioButton
+
+            android:layout_width="0dp"
+            android:text="兑换记录"
+            android:button="@null"
+            android:drawableLeft="@drawable/helpicon_history"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@drawable/radiobutton_textcolor"
+            >
+
+        </hz.sc.helpprojects.view.CustomRadioButton>
+
+        <hz.sc.helpprojects.view.CustomRadioButton
+
+            android:layout_width="0dp"
+            android:text="购物车"
+            android:button="@null"
+            android:drawableLeft="@drawable/helpicon_cart"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@drawable/radiobutton_textcolor"
+            >
+
+        </hz.sc.helpprojects.view.CustomRadioButton>
+
+
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_color"
+        >
+
+    </View>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/helpviewpagerjfsc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

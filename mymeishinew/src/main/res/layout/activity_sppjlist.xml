@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="commeishi.shanjing.mymeishi.activity.SppjlistActivity">
+
+    <include
+
+        layout="@layout/include_title_name"
+
+        >
+    </include>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light"
+        >
+    </View>
+    <TextView
+        android:id="@+id/sppjzongjia"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+
+    <ListView
+        android:scrollbars="none"
+        android:focusable="true"
+        android:listSelector="@android:color/transparent"
+        android:id="@+id/listviewsppijia"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+</LinearLayout>

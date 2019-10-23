@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hz.sc.helpprojects">
+
+    <application
+         >
+        <activity android:name=".activity.HelpMainActivity">
+
+        </activity>
+        <activity android:name=".activity.HelpSearchActivity" />
+        <activity android:name=".activity.Privacysettings" />
+        <activity android:name=".activity.HelpPrivaySercACtivaty"></activity>
+    </application>
+
+</manifest>

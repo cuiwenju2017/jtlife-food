@@ -1,0 +1,106 @@
+package com.hz.mymeishi.fragment;
+
+
+import android.os.Bundle;
+
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+
+import android.view.View;
+import android.view.ViewGroup;
+
+
+import com.base.commonlib.RxHttpUtils;
+import com.base.commonlib.ToastUtils;
+import com.base.commonlib.interceptor.Transformer;
+import com.base.commonlib.view.LoadingDialog;
+import com.hz.mymeishi.R;
+
+
+import com.hz.mymeishi.adapter.RefunAdapter;
+import com.hz.mymeishi.api.GitHubService;
+import com.hz.mymeishi.model.Shouhoubean;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
+
+
+public class Refunddetails extends BaseFragment {
+
+
+    private RecyclerView refun_fragment_listview;
+    private LoadingDialog loadingDialog;
+    private List<Shouhoubean.DataBean.ListBean>mlist;
+    private RefunAdapter refunAdapter;
+
+    @Override
+    protected int setLayoutId() {
+        return R.layout.fragment_refunddetails;
+    }
+
+    @Override
+    protected void init(View view, Bundle savedInstanceState) {
+            initView(view);
+            initDSS();
+    }
+
+    private void initView(View view) {
+        refun_fragment_listview =(RecyclerView) view.findViewById(R.id.refun_fragment_listview);
+    }
+    private void initDSS() {
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity()) {
+            @Override
+            public RecyclerView.LayoutParams generateDefaultLayoutParams() {
+                // 这里要复写一下，因为默认宽高都是wrap_content
+                // 这个不复写，你点击的背景色就只充满你的内容
+                return new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                        ViewGroup.LayoutParams.WRAP_CONTENT);
+            }
+        };
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        refun_fragment_listview.setLayoutManager(linearLayoutManager);
+        refunAdapter = new RefunAdapter(getActivity());
+        refun_fragment_listview.setAdapter(refunAdapter);
+    }
+
+    @Override
+    public void fetchData() {
+        loadingDialog = new LoadingDialog(getActivity());
+        String orderstatus="21";
+        RxHttpUtils
+                .createApi(GitHubService.class)
+                .shouhou(1,orderstatus)
+                .compose(Transformer.<Shouhoubean>switchSchedulers(loadingDialog))
+                .subscribe(new Observer<Shouhoubean>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
+                    }
+                    @Override
+                    public void onNext(Shouhoubean data) {
+                        mlist=  data.getData().getList();
+                        if(mlist.size()!=0){
+                            refunAdapter.setList((ArrayList<Shouhoubean.DataBean.ListBean>)mlist);
+                        }else {
+                            ToastUtils.showToast("暂无数据");
+                        }
+
+
+
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onComplete() {
+
+                    }
+                });
+
+    }
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwaite"
+    android:orientation="vertical">
+    <ListView
+        android:id="@+id/shoudialoglistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+    <RelativeLayout
+
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/re_listview_button"
+            android:background="@color/red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="下一步提交相关信息"
+            android:textColor="@color/colorwaite"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

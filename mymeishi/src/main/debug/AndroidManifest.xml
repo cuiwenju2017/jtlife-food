@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hz.mymeishi">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" /> <!-- if you want to load images from the internet -->
+    <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" /> <!-- if you want to load images from the internet -->
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="nyRThrhgbv9znrdSRZbq1YuZgHIfgCp8" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity android:name="com.hz.mymeishi.activity.MessageNotificationActivity" />
+        <activity android:name="com.hz.mymeishi.activity.BuyListActivity" />
+        <activity android:name="com.hz.mymeishi.activity.XQActivity" />
+        <activity android:name="com.hz.mymeishi.activity.MeiShiHomeActivity" />
+        <activity android:name="com.hz.mymeishi.activity.Loginmymeishi">
+
+        </activity>
+        <activity
+            android:name="com.base.commonlib.zxing.android.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.hz.mymeishi.activity.WholeOrderdetails" />
+        <activity android:name="com.hz.mymeishi.activity.OrderCenterOrderMessage" />
+        <activity android:name="com.hz.mymeishi.activity.CollectionActivity" />
+        <activity android:name="com.hz.mymeishi.activity.GoodsDetaillsActivity" />
+        <activity android:name="com.hz.mymeishi.activity.ModifyPictureActivity" />
+        <activity android:name="com.hz.mymeishi.activity.MessageActivity" />
+        <activity android:name="com.hz.mymeishi.activity.OrderlistActivity" />
+        <activity android:name="com.hz.mymeishi.activity.RefundActivity" />
+        <activity android:name="com.hz.mymeishi.activity.Aftersaledetails" />
+        <activity android:name="com.hz.mymeishi.activity.Returnsubmission" />
+        <activity android:name="com.hz.mymeishi.activity.AppointmentexActivity" />
+        <activity
+            android:name="com.hz.mymeishi.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity android:name="com.hz.mymeishi.activity.SHopdetailsActivity" />
+        <activity android:name="com.hz.mymeishi.activity.GetAccountListActivity" />
+        <activity android:name="com.hz.mymeishi.activity.MyevaluateActivity" />
+        <activity android:name="com.hz.mymeishi.activity.SppjlistActivity" />
+        <activity android:name="com.hz.mymeishi.activity.MapActivity" />
+        <activity android:name="com.hz.mymeishi.activity.NewAddressActivity" />
+        <activity android:name="com.hz.mymeishi.activity.GetAddressActivity" />
+        <activity android:name="com.hz.mymeishi.activity.SearchActivity" />
+        <activity android:name="com.hz.mymeishi.activity.GoddsSerschActivity" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+        <activity android:name="com.hz.mymeishi.activity.RegisterActivity"></activity>
+    </application>
+
+</manifest>

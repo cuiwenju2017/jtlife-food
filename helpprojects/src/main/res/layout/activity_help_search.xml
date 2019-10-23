@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorwaite"
+    tools:context=".activity.HelpSearchActivity">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/Serchifshin"
+            android:layout_width="45dp"
+            android:layout_height="45dp">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="11dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_back"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:drawableLeft="@drawable/meishiicon_search"
+            android:layout_marginLeft="35dp"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/helpserach"
+            android:hint="输入搜索的好友" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/helpsearchtabLayout"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorColor="#4289F3"
+            app:tabBackground="@color/colorwaite"
+            app:tabSelectedTextColor="@color/colorAccent"
+            >
+        </android.support.design.widget.TabLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/helpsearchtab_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

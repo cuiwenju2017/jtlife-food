@@ -1,0 +1,58 @@
+[
+  {
+    "title": "附近",
+    "channelType": 0,
+    "isFix": 1,
+    "isSubscible": 1,
+    "url": "raw://today_news"
+  },
+  {
+    "title": "酒店",
+    "channelType": 0,
+    "isFix": 0,
+    "isSubscible": 1,
+    "url": "raw://today_news"
+  },
+  {
+    "title": "美食",
+    "channelType": 1,
+    "isFix": 0,
+    "isSubscible": 1,
+    "url": "raw://image_news"
+  },
+  {
+    "title": "景点",
+    "channelType": 0,
+    "isFix": 0,
+    "isSubscible": 1,
+    "url": "raw://today_news"
+  },
+  {
+    "title": "超市",
+    "channelType": 0,
+    "isFix": 0,
+    "isSubscible": 0,
+    "url": "raw://today_news"
+  },
+  {
+    "title": "连锁店",
+    "channelType": 0,
+    "isFix": 0,
+    "isSubscible": 0,
+    "url": "raw://today_news"
+  },
+  {
+    "title": "自由市场",
+    "channelType": 0,
+    "isFix": 0,
+    "isSubscible": 0,
+    "url": "raw://today_news"
+  },
+  {
+    "title": "家居",
+    "channelType": 0,
+    "isFix": 0,
+    "isSubscible": 0,
+    "url": "raw://today_news"
+  }
+]

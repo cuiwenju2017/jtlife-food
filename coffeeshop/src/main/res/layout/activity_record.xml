@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFFFF"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.hz.coffeeshop.PLDroidShortVideo.view.SquareGLSurfaceView
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="126dp" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clipChildren="false">
+
+            <com.hz.coffeeshop.PLDroidShortVideo.view.FocusIndicator
+                android:id="@+id/focus_indicator"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/iv_speed"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/icon_speed" />
+
+            <ImageView
+                android:id="@+id/switch_flash"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="20dp"
+                android:onClick="onClickSwitchFlash"
+                android:src="@drawable/btn_flash_selector"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/switch_camera"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="20dp"
+                android:onClick="onClickSwitchCamera"
+                android:src="@drawable/btn_switch_camera" />
+
+            <ImageView
+                android:id="@+id/capture_frame_button"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:clickable="true"
+                android:onClick="onCaptureFrame"
+                android:src="@drawable/btn_capture_frame" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_menu"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/speed_panel"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/super_slow_speed_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onSpeedClicked"
+                android:padding="7dp"
+                android:text="@string/speed_super_slow"
+                android:textColor="@color/speedTextNormal"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/slow_speed_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onSpeedClicked"
+                android:padding="7dp"
+                android:text="@string/speed_slow"
+                android:textColor="@color/speedTextNormal"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/normal_speed_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onSpeedClicked"
+                android:padding="7dp"
+                android:text="@string/speed_normal"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/fast_speed_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onSpeedClicked"
+                android:padding="7dp"
+                android:text="@string/speed_fast"
+                android:textColor="@color/speedTextNormal"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/super_fast_speed_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onSpeedClicked"
+                android:padding="7dp"
+                android:text="@string/speed_super_fast"
+                android:textColor="@color/speedTextNormal"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_control_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/btns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_my_photo"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="50dp"
+                        android:background="@drawable/icon_photo" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_c"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_continue_bg">
+
+                    <ImageView
+                        android:id="@+id/record"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_record"
+                        android:clickable="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/delete"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/btn_delete"
+                        android:onClick="onClickDelete" />
+
+                    <ImageView
+                        android:id="@+id/concat"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/btn_concat"
+                        android:clickable="true"
+                        android:onClick="onClickConcat" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="视频"
+                    android:textColor="#353B40"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_recording"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center"
+                    android:text="录音"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <com.hz.coffeeshop.PLDroidShortVideo.view.SectionProgressBar
+                android:id="@+id/record_progressbar"
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="录制参数配置"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="预览比例"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/PreviewSizeRatioSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="预览尺寸"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/PreviewSizeLevelSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="音频声道"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/AudioChannelNumSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="编码类型"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/EncodingModeLevelSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="编码尺寸"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/EncodingSizeLevelSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="编码码率"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/EncodingBitrateLevelSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+</LinearLayout>

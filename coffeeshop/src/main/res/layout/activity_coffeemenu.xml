@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorwaite"
+    tools:context="com.hz.coffeeshop.activity.CoffeemenuActivity">
+<include
+    android:id="@+id/layout_ctoubu"
+    layout="@layout/layout_coff_rightimage"
+    >
+</include>
+    <View
+        android:id="@+id/activi_view"
+        android:layout_below="@+id/layout_ctoubu"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light"
+        >
+    </View>
+    <LinearLayout
+        android:id="@+id/jiuzanrenshu_lin"
+        android:layout_below="@+id/activi_view"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center|left"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择您的就餐的人数"
+            android:layout_marginLeft="15dp"
+            />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/btn_right_index"
+            android:layout_marginLeft="10dp"
+            />
+        <LinearLayout
+            android:id="@+id/lin_numrenshu"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            >
+            <TextView
+                android:id="@+id/textview_numbre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3人"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+
+        android:layout_below="@+id/jiuzanrenshu_lin"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light"
+        >
+    </View>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#444444"
+        >
+        <LinearLayout
+            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/coffeegouwuche"
+                />
+            <TextView
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥123"
+                android:textColor="@color/colorwaite"
+                />
+            <TextView
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥123"
+                android:textColor="@color/colorwaite"
+                />
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                >
+                <LinearLayout
+                    android:layout_marginRight="25dp"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:background="#FFA724"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorwaite"
+                        android:text="去结算"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

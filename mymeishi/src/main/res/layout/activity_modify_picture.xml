@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+>
+    <include
+        layout="@layout/include_title_name"
+        ></include>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_head_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注：头像尺寸100*100（gif,jpg,jpeg,png）"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_modify_head_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上传头像"
+        android:textColor="@color/colorwaite"
+        android:background="@color/colorBule"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+</LinearLayout>

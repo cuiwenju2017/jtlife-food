@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/colorwaite"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/icon_friend_list" />
+
+    <ImageView
+        android:id="@+id/iv_message"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="29dp"
+        android:layout_toRightOf="@id/iv_user"
+        android:background="@drawable/icon_note_none" />
+
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginRight="19dp"
+        android:layout_toLeftOf="@id/iv_camera"
+        android:background="@drawable/meishiicon_search" />
+
+    <ImageView
+        android:id="@+id/iv_camera"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginRight="19dp"
+        android:layout_toLeftOf="@id/iv_scan"
+        android:background="@drawable/icon_camera" />
+
+    <ImageView
+        android:id="@+id/iv_scan"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/icon_scan" />
+</RelativeLayout>

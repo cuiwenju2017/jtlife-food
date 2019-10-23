@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwaite"
+    tools:context="com.hz.coffeeshop.Fragment.CoffecircleFragment"
+
+    >
+
+ <View
+     android:id="@+id/viewdddsssaa"
+     android:layout_width="match_parent"
+     android:layout_height="30dp"
+     android:background="@color/black"
+     >
+ </View>
+
+</LinearLayout>

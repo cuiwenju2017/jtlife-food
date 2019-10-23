@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.hz.coffeeshop.activity.CoffeConcerned">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="290dp"
+       android:fitsSystemWindows="false"
+       >
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="255dp"
+          android:background="@drawable/coffeshouye"
+          >
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_back" />
+         </RelativeLayout>
+      </RelativeLayout>
+
+      <de.hdodenhof.circleimageview.CircleImageView
+
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:layout_alignParentBottom="true"
+          android:layout_marginLeft="15dp"
+          android:src="@drawable/shanping"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/coffeshouyefen"
+          android:text="进店看看"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentBottom="true"
+          android:layout_marginRight="155dp"
+          android:textColor="@color/colorwaite">
+
+      </TextView>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/coffeshouyefen"
+          android:text="已关注"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentBottom="true"
+          android:layout_marginRight="85dp"
+          android:textColor="@color/colorwaite"
+          />
+      <TextView
+          android:layout_width="56dp"
+          android:layout_height="wrap_content"
+          android:background="@drawable/yuanjia"
+          android:text="私信"
+          android:gravity="center"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentBottom="true"
+          android:layout_marginRight="15dp"
+          android:textColor="#F8bbd0"
+          />
+   </RelativeLayout>
+   <TextView
+       android:layout_marginTop="5dp"
+       android:layout_marginLeft="15dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="山东烤冷面总部"
+       android:textSize="16dp"
+       android:textColor="@color/black"
+       />
+   <LinearLayout
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+      <TextView
+          android:layout_marginLeft="15dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="账户:"
+
+          />
+      <TextView
+          android:layout_marginLeft="10dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="山东官方账号"
+          />
+
+   </LinearLayout>
+   <TextView
+       android:layout_marginLeft="15dp"
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="地址：济南市历下区浦沿路695号（地铁一号线浦站C出口东走2...）"
+       android:textColor="#ff888888"
+       />
+   <LinearLayout
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:text="简介:"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:text="山东人的水饺好味道"
+          />
+   </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/yiguanzhutabLayout"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorColor="#4289F3"
+            app:tabBackground="@color/colorwaite"
+            >
+        </android.support.design.widget.TabLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/gray_light"
+        >
+
+    </View>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/yiguanzhutab_vp"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </android.support.v4.view.ViewPager>
+
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorwaite"
+    tools:context="commeishi.shanjing.mymeishi.activity.AppointmentexActivity">
+    <include
+        android:id="@+id/appment"
+        layout="@layout/include_title_name"
+        >
+    </include>
+    <View
+        android:id="@+id/appview"
+        android:layout_below="@+id/appment"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorLightGray" />
+
+    <LinearLayout
+        android:layout_below="@+id/appview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ListView
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:listSelector="#00000000"
+            android:scrollbars="none"
+            android:focusable="true"
+            android:id="@+id/appomentlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </LinearLayout>
+    <RelativeLayout
+
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/mentex_listview_button"
+            android:background="@color/red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确认提交"
+            android:textColor="@color/colorwaite"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

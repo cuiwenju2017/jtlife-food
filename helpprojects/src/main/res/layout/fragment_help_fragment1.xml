@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorwaite"
+    tools:context=".helpfragment.HelpFragment1">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_color" />
+
+    <RadioGroup
+        android:id="@+id/helpmyhomegadio"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorwaite"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/helpguanzhu"
+            style="@style/helpmyzhuye"
+            android:background="#00000000"
+            android:button="@null"
+            android:text="关注"
+           />
+
+        <RadioButton
+            style="@style/helpmyzhuye"
+            android:background="#00000000"
+            android:button="@null"
+            android:text="推荐"
+            />
+        <RadioButton
+            android:id="@+id/helpcity"
+            style="@style/helpmyzhuye"
+            android:background="#00000000"
+            android:button="@null"
+            android:text="城市"
+
+            />
+
+
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_color"
+        >
+
+    </View>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/helptab_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/lin_goods_sercch"
+    android:background="@color/colorwaite"
+    tools:context=".activity.GoddsSerschActivity">
+
+
+    <include
+        layout="@layout/include_title_name"
+        >
+    </include>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light"
+        >
+
+    </View>
+    <com.hz.mymeishi.View.ClearTextEditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/yuanjia"
+        android:drawableLeft="@drawable/meishiicon_search"
+        android:hint="搜索"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="13sp" />
+
+<LinearLayout
+    android:layout_marginTop="15dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_height="50dp">
+    <LinearLayout
+        android:id="@+id/zonghepaixu"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:gravity="center"
+            android:id="@+id/text_zhziti"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:padding="5dp"
+            android:text="综合"
+            android:drawableRight="@drawable/tv_bg"
+            android:background="@android:color/white"
+            android:drawableEnd="@drawable/tv_bg" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="15dp"
+        android:background="@color/gray_light"
+        >
+
+    </View>
+    <TextView
+    android:layout_width="0dp"
+    android:gravity="center"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:text="综合"
+    />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="15dp"
+        android:background="@color/gray_light"
+        >
+
+    </View>
+    <TextView
+        android:id="@+id/serschen_shaixuan"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="筛选"
+        />
+</LinearLayout>
+
+    <View
+        android:id="@+id/main_darkview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9b9b9b"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/serschRecycrview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</LinearLayout>

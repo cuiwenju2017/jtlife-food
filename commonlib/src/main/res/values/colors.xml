@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#598EF9</color>
+    <color name="colorwaite">#ffffff</color>
+    <color name="black">#444444</color>
+    <color name="gray_light">#EBEDF0</color>
+    <color name="red">#f44336</color>
+    <color name="view_color">#E0E0E0</color>
+    <color name="dhlqianhui">#FAFAFA</color>
+    <color name="colorLightGray">#F1F1F8</color>
+    <color name="colorGray">#333333</color>
+    <color name="colorBule">#598EF9</color>
+    <color name="textColorPrimary">#616161</color>
+    <color name="Blue_Grey">#607d8b</color>
+    <color name="viewBackground">@android:color/white</color>
+    <color name="gray">#9cffffff</color>
+    <color name="windowBackground">@color/Grey100</color>
+    <color name="Grey100">#F5F5F5</color>
+    <!--Zxing相关-->
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="hl_theme">#ffd100</color>
+    <color name="hl_white">#ffffff</color>
+    <color name="toast_white">#ffffff</color>
+    <color name="hl_6x3">#333333</color>
+    <color name="hl_6x6">#666666</color>
+    <color name="hl_6x9">#999999</color>
+    <color name="hl_6xc">#cccccc</color>
+    <color name="hl_6xb">#bbbbbb</color>
+    <color name="toolbar_selected">#efe3e8</color>
+    <color name="toast_stroke_gray">#9faab8</color>
+    <color name="em_3ED69E">#3ED69E</color>
+    <color name="em_6xd">#dddddd</color>
+    <color name="toolbar_backgroud">#D8D8D8</color>
+    <color name="white">#ffffff</color>
+</resources>

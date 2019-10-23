@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="商城" />
+
+    <Button
+        android:id="@+id/btn_hot_attention"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="热点关注" />
+    <Button
+        android:id="@+id/tiaozhuanmeishi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="美食" />
+    <Button
+        android:id="@+id/button_helpprojects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="帮忙" />
+</LinearLayout>
